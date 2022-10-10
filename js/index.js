@@ -15,7 +15,7 @@ function moveCursor(e) {
   outerCursor.style.top = `${y}px`;
 };
 
-let links = Array.from(document.querySelectorAll("a, button, i, .myname"));
+let links = Array.from(document.querySelectorAll("a, button, i, .myname, .email"));
 console.log(links);
 
 links.forEach((link) => {
@@ -147,6 +147,9 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
+
+// ——————————————————————————————————— Contact —————————— 
+
 
 
 
