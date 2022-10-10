@@ -1,8 +1,8 @@
-# portfolio_school
-portfolio school project at Noroff, end of 1st year
-portfolio
+# portfolio_assignment
+school project at Noroff, end of 1st year; portfolio
 
-Plnty_intro_Sjur_Hassel_foto_Black_Snail_Prints
+<img width="1440" alt="Screenshot 2022-10-10 at 18 10 21" src="https://user-images.githubusercontent.com/77972892/194919729-0b658e0c-e523-4fae-b5da-9a33cfa1c110.png">
+
 Overview:
 
 We are given the task of building a portfolio website at Noroff. We can use the tech stack we want.
