@@ -1,4 +1,4 @@
-A repository for building a responsive portfolio website at Noroff
+A school assignment repository for building a responsive portfolio website at Noroff
 
 # portfolio
 
