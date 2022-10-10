@@ -95,12 +95,18 @@ nav {
   justify-content: space-between;
   align-content: space-between;
   text-align: center;
+  z-index: 2;
   /* border: 1px solid black; */
 }
 
 .logo {
   width: 100%;
   max-width: 100px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
 }
 
 .nav-link {
@@ -111,6 +117,10 @@ nav {
 
 .nav-link a {
   color: var(--purple-text);
+}
+
+.nav-link a:hover {
+  color: var(--bckg-light-orange)
 }
 
 .mobile-menu {
@@ -175,7 +185,8 @@ nav {
 }
 
 .wrapper {
- 
+  width: 100%;
+  height: 100vh;
   display: flex;
   /* background-color: #FDA6E9; */
 }
@@ -184,7 +195,7 @@ nav {
 .hero-text {
   height: 100%;
   width: 100%;
-  padding: 40px;
+  padding: 100px;
   /* border: solid 1px orange; */
   display: flex;
   flex-direction: column;
@@ -220,32 +231,11 @@ nav {
   top: 28%;
   left: 50px;
   white-space: nowrap;
-}
-
-.myname .letter {
-  display: inline-block;
-}
-
-.line2 {
-  position: fixed;
-  top: 45%;
-  left: 50px;
-  white-space: nowrap;
-}
-.line3 {
-  position: fixed;
-  top: 58%;
-  left: 50px;
-  white-space: nowrap;
-}
-
-.myname span:hover {
-  /* transition: 2s ease-in-out; */
   background: linear-gradient(90deg, var(--pink-name-heading) 10%, var(--bckg-light-orange), var(--burgundy), var(--bckg-light-purple), var(--bckg-light-yellow), var(--bckg-light-orange), var(--bckg-light-purple), var(--bckg-light-pink), var(--bckg-lightest-pink), var(--burgundy));
   background-clip: text;
   color: transparent;
   animation: text-animate 4s ease-in-out .01s infinite alternate both;
-
+  /* animation-delay: 2s; */
   background-size: 400%;
   background-position: -20%;
 }
@@ -259,6 +249,38 @@ nav {
   }
 }
 
+.myname .letter {
+  display: inline-block;
+}
+
+.line2 {
+  position: fixed;
+  top: 45%;
+  left: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+.line3 {
+  position: fixed;
+  top: 58%;
+  left: 50px;
+  white-space: nowrap;
+}
+
+.myname:hover {
+  /* transition: 2s ease-in-out; */
+  background: linear-gradient(90deg, var(--pink-name-heading) 10%, var(--bckg-light-orange), var(--burgundy), var(--bckg-light-purple), var(--bckg-light-yellow), var(--bckg-light-orange), var(--bckg-light-purple), var(--bckg-light-pink), var(--bckg-lightest-pink), var(--burgundy));
+  background-clip: text;
+  color: transparent;
+  animation: text-animate 4s ease-in-out .01s infinite alternate both;
+
+  background-size: 400%;
+  background-position: -20%;
+}
+
+
+
 .arrow {
   width: 20%;
   position: fixed;
@@ -268,8 +290,7 @@ nav {
   /* border: solid 1px pink; */
   transform: rotate(90deg);
   right: 10%;
-  top: 45%;
-  top: 400px;
+  top: 4%;
 }
 
 .arrow img {
@@ -295,13 +316,11 @@ nav {
 
 
 
-/* ——————————————————————————————————— Project section —————————— */
+/* ——————————————————————————————————— Project section ——————————
 .projects-container {   
   display: flex;          
   scroll-snap-type: x mandatory;
-  /* overflow-y: auto; */
   overflow-x: scroll;
-  /* overflow: hidden; */
   height: 100vh;
   width: 300%;
 }
@@ -312,15 +331,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translateX(400%); */
-  /* transition: transform .5s ease; */
   scroll-snap-align: start;
-  /* position: relative; */
 }
 
 .projects img {
   max-width: 900px;
-}
+} */
 
 
 /* ——————————————————————————————————— Current Transition section —————————— */
@@ -352,6 +368,7 @@ button:hover {
 }
 
 .transition-container {
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -365,7 +382,7 @@ button:hover {
 .page {
   width: 100%;
   height: 100vh;
-  /* position: relative; */
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -380,7 +397,7 @@ button:hover {
   max-width: 900px;
   position: absolute;
   left: 18.9%;
-  top: 317%;
+  top: 17%;
   z-index: 1;
 }
 /* .mac-wrapper {
