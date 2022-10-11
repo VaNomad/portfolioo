@@ -15,7 +15,7 @@ function moveCursor(e) {
   outerCursor.style.top = `${y}px`;
 };
 
-let links = Array.from(document.querySelectorAll("a, button, i, .myname, .email"));
+let links = Array.from(document.querySelectorAll("a, button, span, i, .phone, .myname, .email"));
 console.log(links);
 
 links.forEach((link) => {
