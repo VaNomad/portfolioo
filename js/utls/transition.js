@@ -6,7 +6,7 @@ window.onload = () => {
 
   setTimeout(() => {
     transition.classList.remove("is-active");
-  }, 500);
+  }, 100);
 
   for (let i = 0; i < atags.length; i++) {
     const atag = atags[i];
@@ -21,7 +21,7 @@ window.onload = () => {
 
       setTimeout(() => {
         window.location.href = target;
-      }, 500);
+      }, 100);
 
     });
 
