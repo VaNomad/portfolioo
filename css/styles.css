@@ -197,6 +197,63 @@ nav {
   
 }
 
+/* ——————————————————————————————————— Transition Page ——————————  */
+.transition-1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: red;
+  /* background: linear-gradient((90deg) var(--black-bg-grad), var(--black)); */
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s ease-out;
+}
+
+.transition-1.is-active {
+  opacity: 1;
+  pointer-events: all;
+
+}
+
+.transition-2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  left: -100%;
+  z-index: 2;
+  background-color: #000000;
+  /* background: linear-gradient((90deg) var(--black-bg-grad), var(--black)); */
+  /* opacity: 0; */
+  /* pointer-events: none; */
+  transition: .5s ease-out;
+}
+
+.transition-2.is-active {
+  left: 0;
+}
+
+.transition-3 {
+  position: fixed;
+  top: 100%;
+  right: 0;
+  height: 100%;
+  left: 0;
+  z-index: 2;
+  background-color: #000000;
+  /* background: linear-gradient((90deg) var(--black-bg-grad), var(--black)); */
+  /* opacity: 0; */
+  /* pointer-events: none; */
+  transition: .5s ease-out;
+}
+
+.transition-3.is-active {
+  top: 0;
+}
+
 /* ——————————————————————————————————— Hero section —————————— */
 .hero {
   background-color: var(--bckg-black);
@@ -334,7 +391,7 @@ nav {
 
 
 /* ——————————————————————————————————— Transition section —————————— */
-.transition {
+.transition-scroll {
   background-color: var(--bckg-black);
   background: linear-gradient(var(--bckg-black), var(--black-bg-solid) );
   height: 200vh;
