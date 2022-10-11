@@ -148,8 +148,12 @@ prevButton.addEventListener("click", () => {
   slidesContainer.scrollLeft -= slideWidth;
 });
 
-// ——————————————————————————————————— Contact —————————— 
 
+// ——————————————————————————————————— image fade-in —————————— 
+
+const fade = document.querySelectorAll(".fade-in-image");
+
+console.log(fade);
 
 
 
