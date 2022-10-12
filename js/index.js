@@ -29,47 +29,6 @@ links.forEach((link) => {
 
 
 // ——————————————————————————————————— Hero section —————————— 
-
-// Writing Letters
-// const textWrapper = document.querySelector(".myname");
-
-
-
-// function nameAnim() {
-  // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-  // anime.timeline({ loop: false })
-    // .add({
-    //   targets: '.m12 .letter',
-    //   scale: [4, 1],
-    //   opacity: [0, 1],
-    //   translateZ: 0,
-    //   easing: "easeOutExpo",
-    //   duration: 1000,
-    //   delay: (el, i) => 300 * i
-    // })
-    // .add({
-    //   targets: '.zip .letter',
-    //   scale: [0.2, 1],
-    //   opacity: [0, 1],
-    //   borderColor: '#fff',
-    //   translateZ: 0,
-    //   easing: "easeOutExpo",
-    //   duration: 1000,
-    //   delay: (el, i) => 200 * (i + 1)
-    // });
-// }
-  
-// nameAnim();
-// .add({
-//   targets: '.m12',
-//   opacity: 0,
-//   duration: 1000,
-//   easing: "easeOutExpo",
-//   delay: 100
-// });
-// textWrapper.innerHTML = " ";
-
 //Hero text on-scroll animation
 
 const myname = document.querySelector(".myname");
@@ -114,23 +73,6 @@ window.onscroll = () => {
 
 // }
 
-
-
-
-// ——————————————————————————————————— 1st Slider —————————— 
-// const pages = document.querySelectorAll(".page");
-// const translateAmount = 100;
-// let translate = 0;
-
-// slide = (direction) => {
-//   direction === "next" ? translate -= translateAmount : translate += translateAmount;
-
-//   pages.forEach(
-//     pages => (pages.style.transform = `translateX(${translate}%)`)
-//   );
-// }
-
-
 // ——————————————————————————————————— 2nd Slider —————————— 
 
 const slidesContainer = document.querySelector("#slides-container");
@@ -151,9 +93,9 @@ prevButton.addEventListener("click", () => {
 
 // ——————————————————————————————————— image fade-in —————————— 
 
-const fade = document.querySelectorAll(".fade-in-image");
+// const fade = document.querySelectorAll(".fade-in-image");
 
-console.log(fade);
+// console.log(fade);
 
 
 

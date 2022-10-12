@@ -539,6 +539,7 @@ button:hover {
   width: 100%;
   height: 100%;
   flex: 1 0 100%;
+  padding: 13vh 27.5vw 17vh;
 }
 
 .slide-arrow {
@@ -580,10 +581,29 @@ button:hover {
 
 /* ........................... Mac Slider ... */
 .macbook {
-  position: fixed;
+  position: absolute;
   z-index: 3;
-  top: 18%;
-  left: 18.8%;
+  top: 13vh;
+  left: 18.7vw;
+  right: 18.7vw;
+  bottom: 13vh;
+  
+
+}
+
+.flexing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1 0 100%; */
+  /* padding: 0 27.5vw 0; */
+} 
+
+.macbook img {
+  width: 100%;
+  max-width: 900px;
 }
 
 .outer-wrapper {
@@ -593,8 +613,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  /* border: 4px solid red; */
 }
 
 .inner-wrapper {
@@ -602,13 +620,12 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
-  margin-left: 2px;
+  /* margin-bottom: 1rem; */
+  /* margin-left: 2px; */
   height: 100%;
   width: 100%;
-  max-height: 400px;
-  max-width: 642px;
-  /* border: 4px solid orange; */
+  /* max-height: 400px; */
+  
 }
 
 .inner-wrapper img {
@@ -617,6 +634,7 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 640px;
 }
 
 .fade-in-image {

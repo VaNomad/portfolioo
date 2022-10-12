@@ -1,30 +1,30 @@
-// Page Transition
-window.onload = () => {
-  const transition = document.querySelector(".transition");
-  const atags = document.querySelector("a");
+// // Page Transition
+// window.onload = () => {
+//   const transition = document.querySelector(".transition");
+//   const atags = document.querySelector("a");
   
 
-  setTimeout(() => {
-    transition.classList.remove("is-active");
-  }, 100);
+//   setTimeout(() => {
+//     transition.classList.remove("is-active");
+//   }, 100);
 
-  for (let i = 0; i < atags.length; i++) {
-    const atag = atags[i];
+//   for (let i = 0; i < atags.length; i++) {
+//     const atag = atags[i];
   
-    atag.addEventListener("click", e => {
-      e.preventDefault();
-      let target = e.target.href;
+//     atag.addEventListener("click", e => {
+//       e.preventDefault();
+//       let target = e.target.href;
 
-      console.log('target');
+//       console.log('target');
       
-      transition.classList.add("is-active");
+//       transition.classList.add("is-active");
 
-      setTimeout(() => {
-        window.location.href = target;
-      }, 100);
+//       setTimeout(() => {
+//         window.location.href = target;
+//       }, 100);
 
-    });
+//     });
 
-  }
+//   }
   
-}
+// }
