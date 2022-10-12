@@ -15,6 +15,7 @@ const logo = document.querySelector(".logo-mobile");
 const mobileMenu = () => {
   mobile.classList.toggle("active");
   navMenu.classList.toggle("active");
+  logo.classList.toggle("active");
 }
 
 mobile.addEventListener("click", mobileMenu);
