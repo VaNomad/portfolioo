@@ -452,7 +452,7 @@ body {
 /* ........................... NEW SLIDER ... */
 
 .slider-wrapper {
-  background-image: url(/assets/icons/macbook_outline_white.png);
+  background-image: url(/assets/icons/macbook_outline_white_w:o_inner.png);
   background-color: var(--bckg-black);
   /* background-size: 1050px; */
   background-size: contain;
@@ -470,7 +470,7 @@ body {
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
-  padding-bottom: 28px;
+  padding-bottom: 2%;
 }
 
 .slide {
@@ -485,7 +485,8 @@ body {
 
 .slide img {
   width: 100%;
-  max-width: 722px;
+  max-width: 730px;
+  border-radius: 3px;
 }
 
 .slide-arrow {
