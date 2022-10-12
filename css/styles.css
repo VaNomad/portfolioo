@@ -450,11 +450,21 @@ nav {
 /* ——————————————————————————————————— W O R K   P A G E —————————— */
 /* ........................... NEW SLIDER ... */
 
+.macbook {
+  
+}
+
 .slider-wrapper {
+  background-image: url(/assets/icons/macbook_outline_white.png);
+  background-size: 1050px;
+  background-position: center;
+  background-repeat: no-repeat;
   /* margin: 1rem; */
   position: relative;
   overflow: hidden;
 }
+
+
 
 .slides-container {
   height: 100vh;
@@ -467,6 +477,7 @@ nav {
   padding: 0; */
   overflow: scroll;
   scroll-behavior: smooth;
+  padding-bottom: 34px;
 }
 
 .slide {
@@ -480,7 +491,7 @@ nav {
 
 .slide img{
   width: 100%;
-  max-width: 900px;
+  max-width: 748px;
 }
 
 .slide-arrow {
