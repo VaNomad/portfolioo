@@ -155,7 +155,7 @@ nav {
 }
 
 .cv {
-  right: 400px;
+  right: 24%;
 }
 
 .phone {
@@ -163,7 +163,7 @@ nav {
 }
 
 .call {
-  right: 500px;
+  right: 34%;
 }
 
 .call .number {
@@ -458,7 +458,7 @@ nav {
 
 .slides-container {
   height: 100vh;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   width: 100%;
   display: flex;
   /* justify-content: center; */
