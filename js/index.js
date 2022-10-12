@@ -1,31 +1,31 @@
 // ——————————————————————————————————— Navigation ————————————
 // Cursor
-let innerCursor = document.querySelector(".inner-cursor");
-let outerCursor = document.querySelector(".outer-cursor");
+// let innerCursor = document.querySelector(".inner-cursor");
+// let outerCursor = document.querySelector(".outer-cursor");
 
-document.addEventListener('mousemove', moveCursor);
+// document.addEventListener('mousemove', moveCursor);
 
-function moveCursor(e) {
-  let x = e.clientX;
-  let y = e.clientY;
+// function moveCursor(e) {
+//   let x = e.clientX;
+//   let y = e.clientY;
 
-  innerCursor.style.left = `${x}px`;
-  innerCursor.style.top = `${y}px`;
-  outerCursor.style.left = `${x}px`;
-  outerCursor.style.top = `${y}px`;
-};
+//   innerCursor.style.left = `${x}px`;
+//   innerCursor.style.top = `${y}px`;
+//   outerCursor.style.left = `${x}px`;
+//   outerCursor.style.top = `${y}px`;
+// };
 
-let links = Array.from(document.querySelectorAll("a, button, span, i, .phone, .myname, .email"));
-console.log(links);
+// let links = Array.from(document.querySelectorAll("a, button, span, i, .myname, .email"));
+// console.log(links);
 
-links.forEach((link) => {
-  link.addEventListener("mouseover", () => {
-    innerCursor.classList.add("grow");
-  });
-  link.addEventListener("mouseleave", () => {
-    innerCursor.classList.remove("grow");
-  });
-});
+// links.forEach((link) => {
+//   link.addEventListener("mouseover", () => {
+//     innerCursor.classList.add("grow");
+//   });
+//   link.addEventListener("mouseleave", () => {
+//     innerCursor.classList.remove("grow");
+//   });
+// });
 
 
 // ——————————————————————————————————— Hero section —————————— 
