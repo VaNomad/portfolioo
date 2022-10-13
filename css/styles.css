@@ -147,7 +147,8 @@ body {
 .personal-links {
   position: absolute;
   display: flex;
-  flex-direction: row;
+  justify-self: space-between;
+  /* flex-direction: row; */
   justify-self: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -161,11 +162,15 @@ body {
   color: var(--bckg-light-yellow);
 }
 
-.cv {
+.cv,
+.phone {
   margin-left: 5rem;
   color: var(--bckg-light-yellow);
 }
 
+.call span:hover {
+  margin-right: 30px;
+}
 
 .contact {
   color: var(--purple-text);
