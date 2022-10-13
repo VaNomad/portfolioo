@@ -142,7 +142,7 @@ body {
 }
 
 .email:hover::before {
-  content: "{ sjur.hassel@gmail.com }";
+  content: "sjur.hassel@gmail.com";
   font-family: 'Montserrat', sans-serif;
   color: var(--bckg-light-yellow);
   position: absolute;
@@ -156,8 +156,10 @@ body {
   letter-spacing: 2px;
   color: var(--bckg-light-yellow);
   position: absolute;
+
   bottom: 50px;
   transition: .5s ease-out;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cv {
@@ -168,22 +170,37 @@ body {
   color: var(--bckg-light-yellow);
 }
 
+.contact {
+  color: var(--purple-text);
+  text-transform: lowercase;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+
 .call {
   right: 440px;
 }
 
-.call .number {
+/* .mail {
+  right: 800px;
+  font-size: 20px;
+} */
+
+.call .number,
+.mail .email {
   display: none;
 }
 
-.call:hover .phone {
+.call:hover .phone,
+.mail:hover .contact {
   display: none;
-
 }
 
-.call:hover .number {
+.call:hover .number,
+.mail:hover .email {
   display: inline;
   color: var(--bckg-light-yellow);
+  text-transform: lowercase;
 }
 
 .show-scroll {
@@ -195,8 +212,6 @@ body {
   text-transform: lowercase;
   top: 50vh;
   left: 900px;
-  /* transform: rotate(-90deg); */
-  /* transform-origin: 80px 350px; */
 }
 
 
@@ -783,15 +798,20 @@ button:hover {
   /* nav */
   .nav-menu {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: var(--black-bg-solid);
     /* padding: 4rem; */
     position: fixed;
     width: 50%;
+    min-width: 250px;
     top: -100%;
     left: 0;
     /* flex-direction: column; */
     transition-duration: .5s;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .nav-display {
@@ -837,7 +857,7 @@ button:hover {
   .nav-link[aria-current="page"] {
     background-color: var(--bckgr-white);
     border: solid 1px var(--bckgr-white);
-    color: var(--black);
+    color: var(--pink-name-heading);
   }
 
   .nav-menu.active {
@@ -854,4 +874,74 @@ button:hover {
     transform: rotate(270deg);
     color: var(--bg-grey-light);
   }
+
+  .call {
+    position: static;
+  }
+
+  .personal-links {
+    height: 180px;
+    max-width: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid orange;
+  }
+
+  .phone {
+    border: 1px solid red;
+    
+  }
+  .number {
+    border: 1px solid yellowgreen;
+    margin-top: 15px;
+  }
+  
+
+  .email:hover span {
+    display: block;
+    color: var(--bckg-light-orange);
+  }
+
+  .email:hover::before {
+    color: var(--bckg-light-orange);
+    left: 1rem;
+    right: 1rem;
+    font-size: 16px;
+  }
+
+
+  .cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 20%; */
+    /* left: 145px; */
+    /* top: 480px; */
+    border: 1px solid green;
+  }
+
+  
+
+  .call:hover .phone,
+  .email:hover {
+    display: flex;
+    justify-content: center;
+    color: var(--bckg-light-orange);
+  }
+
+  .call:hover .number {
+    position: static;
+    display: flex;
+    /* top: -150px;
+    left: -1px;
+    width: 100%; */
+  }
+
+  /* email:hover::before {
+    position: absolute;
+    bottom: 80px;
+  } */
+
 }
