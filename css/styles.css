@@ -152,22 +152,24 @@ body {
 }
 
 .personal-links {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--bckg-light-yellow);
-  position: absolute;
-
-  bottom: 50px;
+  bottom: 53px;
   transition: .5s ease-out;
   font-family: 'Montserrat', sans-serif;
 }
 
-.cv {
-  right: 340px;
-}
-
 .phone {
   color: var(--bckg-light-yellow);
+}
+
+.cv {
+  margin-left: 5rem;
 }
 
 .contact {
@@ -175,10 +177,6 @@ body {
   text-transform: lowercase;
   letter-spacing: 0;
   font-size: 20px;
-}
-
-.call {
-  right: 440px;
 }
 
 /* .mail {
@@ -211,7 +209,7 @@ body {
   font-size: 20px;
   text-transform: lowercase;
   top: 50vh;
-  left: 850px;
+  right: 10%;
 }
 
 
@@ -784,6 +782,10 @@ button:hover {
 }
 
 /* ——————————————————————————  MEDIA QUERIES  ———————————————————— */
+@media screen and (max-width: 920px) {
+
+}
+
 @media screen and (max-width: 780px) {
   /* .logo {
     position: relative;
