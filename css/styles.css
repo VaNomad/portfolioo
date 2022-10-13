@@ -74,6 +74,7 @@ body {
 
 /* ———————————————————————————————————————————  NAVIGATION  ———————————— */
 /* ........................... Navlinks ... */
+
 .nav-menu {
   height: 100vh;
   width: 100%;
@@ -108,13 +109,13 @@ body {
   /* border: #FC5184 solid 1px; */
 }
 
-
 .nav-link a,
 .nav-link span {
   color: var(--purple-text);
 }
 
-.nav-link a:hover {
+.nav-link a:hover,
+.cv:hover {
   color: var(--bckg-light-orange);
 }
 
@@ -127,14 +128,6 @@ body {
   width: 100%;
   max-width: 50px;
   margin-top: 10px;
-}
-
-.email {
-  width: 11em;
-}
-
-.email a {
-  transition: 0.4s ease-in-out;
 }
 
 .email:hover span {
@@ -170,7 +163,9 @@ body {
 
 .cv {
   margin-left: 5rem;
+  color: var(--bckg-light-yellow);
 }
+
 
 .contact {
   color: var(--purple-text);
@@ -178,11 +173,6 @@ body {
   letter-spacing: 0;
   font-size: 20px;
 }
-
-/* .mail {
-  right: 800px;
-  font-size: 20px;
-} */
 
 .call .number,
 .mail .email {
@@ -199,6 +189,7 @@ body {
   display: inline;
   color: var(--bckg-light-yellow);
   text-transform: lowercase;
+  color: greenyellow;
 }
 
 .show-scroll {
@@ -211,7 +202,6 @@ body {
   top: 50vh;
   right: 10%;
 }
-
 
 
 /* ........................... Cursor ... */
@@ -253,65 +243,7 @@ body {
 }
 
 
-
-/* ——————————————————————————————————— Transition Page ——————————  */
-/* .transition-1 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  background-color: red;
-  background: linear-gradient((90deg) var(--black-bg-grad), var(--black));
-  opacity: 0;
-  pointer-events: none;
-  transition: .5s ease-out;
-}
-
-.transition-1.is-active {
-  opacity: 1;
-  pointer-events: all;
-
-}
-
-.transition-2 {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  bottom: 0;
-  left: -100%;
-  z-index: 2;
-  background-color: #000000;
-  background: linear-gradient(-90deg, var(--black-bg-grad), var(--black));
-  opacity: .8;
-  pointer-events: none;
-  transition: .5s ease-out;
-}
-
-.transition-2.is-active {
-  left: 0;
-}
-
-.transition-3 {
-  position: fixed;
-  top: 100%;
-  right: 0;
-  height: 100%;
-  left: 0;
-  z-index: 2;
-  background-color: #000000;
-  background: linear-gradient((90deg) var(--black-bg-grad), var(--black));
-  opacity: 0;
-  pointer-events: none;
-  transition: .5s ease-out;
-}
-
-.transition-3.is-active {
-  top: 0;
-} */
-
-/* ——————————————————————————————————— Index Page —————————— */
+/* ———————————————————————————————————————————  INDEX PAGE  ———————————— */
 .hero {
   background-color: var(--bckg-black);
 }
@@ -399,12 +331,10 @@ body {
 }
 
 .myname:hover {
-  /* transition: 2s ease-in-out; */
   background: linear-gradient(90deg, var(--pink-name-heading) 10%, var(--bckg-light-orange), var(--burgundy), var(--bckg-light-purple), var(--bckg-light-yellow), var(--bckg-light-orange), var(--bckg-light-purple), var(--bckg-light-pink), var(--bckg-lightest-pink), var(--burgundy));
   background-clip: text;
   color: transparent;
   animation: text-animate 4s ease-in-out .01s infinite alternate both;
-
   background-size: 400%;
   background-position: -20%;
 }
@@ -427,10 +357,10 @@ body {
   display: flex;
   justify-content: center;
   letter-spacing: 4px;
-  /* border: solid 1px pink; */
   transform: rotate(-90deg);
   right: 40%;
   top: 243%;
+  /* border: solid 1px pink; */
 }
 
 .arrow img,
@@ -460,30 +390,7 @@ body {
 }
 
 
-/* ——————————————————————————————————— Project section ——————————
-.projects-container {   
-  display: flex;          
-  scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  height: 100vh;
-  width: 300%;
-}
-
-.projects {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-}
-
-.projects img {
-  max-width: 900px;
-} */
-
-
-/* ——————————————————————————————————— W O R K   P A G E —————————— */
+/* ———————————————————————————————————————————  WORK PAGE  ———————————— */
 /* ........................... NEW SLIDER ... */
 
 .slider-wrapper {
@@ -555,194 +462,6 @@ body {
 }
 
 
-/* ........................... Bckg slider ... */
-
-/* .purple {
-  background: linear-gradient(var(--purple-bg-solid), var(--purple-bg-grad));
-}
-
-.blue {
-  background: linear-gradient(var(--blue-bg-solid), var(--blue-bg-grad));
-}
-
-.orange {
-  background: linear-gradient(var(--orange-bg-solid), var(--orange-bg-grad));
-}
-
-button {
-  position: relative;
-  padding: 10px 20px;
-  width: 100px;
-  border: solid 1px #fff;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 5px;
-  transition: 0.5s ease-out;
-  z-index: 3;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
-.transition-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.pages {
-  display: flex;
-  width: 300%;
-}
-
-.page {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 50px;
-  transition: all 0.5s;
-  color: #fff;
-}
-
-.pages img {
-  max-width: 900px;
-  position: absolute;
-  left: 18.9%;
-  top: 17%;
-  z-index: 1;
-  
-} */
-
-
-/* ........................... Slider ..................................... */
-/* .slider-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.slides-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: scroll;
-  scroll-behavior: smooth;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  flex: 1 0 100%;
-  padding: 13vh 27.5vw 17vh;
-}
-
-.slide-arrow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 80px;
-  background-color: var(--white-logo);
-  border: none;
-  width: 48px;
-  font-size: 48px;
-  opacity: 0.5;
-  padding-top: 12px;
-  transition: opacity 100ms;
-}
-
-.slide-arrow:hover {
-  opacity: 0.8;
-}
-
-#slide-arrow-prev {
-  color: #000000;
-  left: 0;
-  padding-left: 3px;
-  border-radius: 0 48px 48px 0;
-}
-
-#slide-arrow-next {
-  color: var(--black-bg-solid);
-  right: 0;
-  padding-left: 3px;
-  border-radius: 48px 0 0 48px;
-} */
-
-
-/* ........................... Mac Slider ................................. */
-/* .macbook {
-  position: absolute;
-  z-index: 3;
-  top: 13vh;
-  left: 18.7vw;
-  right: 18.7vw;
-  bottom: 13vh;
-}
-
-.flexing {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
-
-.macbook img {
-  width: 100%;
-  max-width: 900px;
-}
-
-.outer-wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inner-wrapper {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  
-}
-
-.inner-wrapper img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-width: 640px;
-}
-
-.fade-in-image {
-  animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 /* ——————————————————————————————————— About section —————————— */
 .about {
   background: linear-gradient(to right, var(--black-bg-solid) 33%, var(--black-bg-grad));
@@ -785,6 +504,7 @@ button:hover {
   /* border: 1px solid red; */
 }
 
+
 /* ——————————————————————————  MEDIA QUERIES  ———————————————————— */
 @media screen and (max-width: 920px) {
 
@@ -813,7 +533,7 @@ button:hover {
     position: fixed;
     width: 50%;
     min-width: 250px;
-    top: -100%;
+    top: 0;
     left: 0;
     /* flex-direction: column; */
     transition-duration: .5s;
@@ -887,10 +607,11 @@ button:hover {
 
   .personal-links {
     height: 180px;
-    max-width: 200px;
-    margin-top: 30px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    margin-bottom: 5rem;
     justify-content: space-around;
     border: 1px solid orange;
   }
@@ -901,36 +622,28 @@ button:hover {
   }
   .number {
     border: 1px solid yellowgreen;
-    margin-top: 15px;
+    /* display: flex; */
+    justify-content: center;
   }
   
 
   .email:hover span {
-    display: block;
+    /* display: block; */
     color: var(--bckg-light-orange);
   }
 
   .email:hover::before {
+    position: static;
     color: var(--bckg-light-orange);
     left: 1rem;
     right: 1rem;
     font-size: 16px;
   }
 
-
   .cv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 20%; */
-    /* left: 145px; */
-    /* top: 480px; */
-    border: 1px solid green;
+    margin-left: 0;
   }
 
-  
-
-  .call:hover .phone,
   .email:hover {
     display: flex;
     justify-content: center;
