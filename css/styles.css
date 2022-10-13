@@ -67,7 +67,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--black-bg-solid);
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   /* cursor: pointer; */
 }
 
@@ -119,7 +119,8 @@ body {
   color: var(--bckg-light-orange);
 }
 
-.mobile {
+.mobile,
+.mobile2 {
   padding: 50px;
   display: none;
 }
@@ -466,7 +467,6 @@ body {
   border-radius: 48px 0 0 48px;
 }
 
-
 /* ——————————————————————————————————— About section —————————— */
 .about {
   background: linear-gradient(to right, var(--black-bg-solid) 33%, var(--black-bg-grad));
@@ -510,6 +510,74 @@ body {
 }
 
 
+/* ——————————————————————————  PROJECTS PAGE  ———————————————————— */
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  color: var(--white);
+  background-image: url("/assets/images/rainydays_screenshot.jpg");
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 45ch;
+  background-repeat: no-repeat;
+  /* border: 1px solid orange; */
+}
+
+.card-content {
+  padding: 20px;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 
+  );
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+  margin-bottom: 1.5rem;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: var(--purple-text);
+  right: 30px;
+  top: 35px;
+}
+
+.github-badge {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.github-button {
+  margin-top: 1rem;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  /* background-color: var(--bckg-light-purple); */
+  padding: 10px 15px;
+  width: fit-content;
+  border: 2px solid var(--bckg-light-purple);
+  border-radius: 3px;
+}
+
+.github-button h2 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+
+
 /* ——————————————————————————  MEDIA QUERIES  ———————————————————— */
 @media screen and (max-width: 920px) {
 
@@ -538,7 +606,7 @@ body {
     position: fixed;
     width: 50%;
     min-width: 250px;
-    top: 0;
+    top: -100%;
     left: 0;
     /* flex-direction: column; */
     transition-duration: .5s;
@@ -562,7 +630,8 @@ body {
     z-index: 4;
   } */
 
-  .mobile {
+  .mobile,
+  .mobile2 {
     display: block;
     position: fixed;
     right: 0;
@@ -599,15 +668,22 @@ body {
 
   .mobile.active {
     position: fixed;
-    /* top: 38px; */
-    /* right: 32px; */
     transition: transform 0.5s;
-    transform: rotate(270deg);
-    color: var(--bg-grey-light);
+    transform: rotate(315deg);
+  }
+
+  .mobile2.active {
+    position: fixed;
+    transition: transform 0.5s;
+    transform: rotate(-315deg);
   }
 
   .call {
     position: static;
+  }
+
+  .call span:hover {
+    margin: 0;
   }
 
   .personal-links {
@@ -618,17 +694,18 @@ body {
     align-self: center;
     margin-bottom: 5rem;
     justify-content: space-around;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
   }
 
   .phone {
-    border: 1px solid red;
+    margin-left: 0;
+    /* border: 1px solid red; */
     
   }
   .number {
-    border: 1px solid yellowgreen;
     /* display: flex; */
     justify-content: center;
+    /* border: 1px solid yellowgreen; */
   }
   
 
@@ -642,7 +719,8 @@ body {
     color: var(--bckg-light-orange);
     left: 1rem;
     right: 1rem;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 2px;
   }
 
   .cv {
