@@ -447,6 +447,10 @@ body {
   /* border: solid 1px pink; */
 }
 
+.fscreen-text {
+  font-size: 14px;
+}
+
 
 /* ........................... Transition Section ... */
 .transition-scroll {

@@ -5,7 +5,7 @@ const showScroll = document.querySelector(".show-scroll");
 
 
 window.addEventListener('scroll', function() {
-  showScroll.innerHTML = parseInt(window.pageYOffset/18) + '%' + ' ' + 'f/scr';
+  showScroll.innerHTML = parseInt(window.pageYOffset/18) + '%' + ' ' +  '<span class="fscreen-text">f/scr</span>';
 });
 
 
