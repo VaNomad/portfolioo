@@ -1,4 +1,15 @@
 // ——————————————————————————————————— Navigation ————————————
+
+// Current Scroll
+const showScroll = document.querySelector(".show-scroll");
+
+
+window.addEventListener('scroll', function() {
+  showScroll.innerHTML = parseInt(window.pageYOffset/18) + '%' + ' ' + 'f/scr';
+});
+
+
+
 // Cursor
 // let innerCursor = document.querySelector(".inner-cursor");
 // let outerCursor = document.querySelector(".outer-cursor");

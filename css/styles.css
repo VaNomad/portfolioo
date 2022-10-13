@@ -186,6 +186,19 @@ body {
   color: var(--bckg-light-yellow);
 }
 
+.show-scroll {
+  color: rgb(250, 99, 99);
+  position: fixed;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: lowercase;
+  top: 50vh;
+  left: 900px;
+  /* transform: rotate(-90deg); */
+  /* transform-origin: 80px 350px; */
+}
+
 
 
 /* ........................... Cursor ... */
