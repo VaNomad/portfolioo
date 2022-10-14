@@ -36,6 +36,7 @@
   --purple-text: #B68BD9;
   --yellow-text: #BCB525;
   --white-logo: #ffffff;
+  --white-text: #debddb;
   --blue-bg-main-solid: #333056;
   --blue-bg-main-grad: #0C0C14;
   --red-bg-solid: #B03247;
@@ -518,9 +519,20 @@ body {
 
 
 /* ——————————————————————————  PROJECTS PAGE  ———————————————————— */
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--bckg-dark-purple);
+  padding: 20px;
+  border-radius: 5px;
+}
+
 .projects {
   width: 100%;
-  height: 100vh;
+  height: 300vh;
+  padding: 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -535,7 +547,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10rem 0 0;
-  max-width: 45ch;
+  max-width: 600px;
   width: 100%;
   /* border: 1px solid orange; */
   z-index: 2;
@@ -610,6 +622,24 @@ body {
 .github-button h2 {
   font-size: 16px;
   font-weight: 300;
+}
+
+.card-text {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+  color: var(--white);
+  padding: 1rem;
+  border: solid 1px var(--white-text);
+  border-radius: 5px;
+  color: var(--white-text);
+}
+
+.card-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0;
+  color: var(--white-logo);
 }
 
 
