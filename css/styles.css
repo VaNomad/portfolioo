@@ -365,8 +365,8 @@ body {
   justify-content: center;
   letter-spacing: 4px;
   transform: rotate(-90deg);
-  right: 40%;
-  top: 243%;
+  left: 30%;
+  top: 223%;
   /* border: solid 1px pink; */
 }
 
