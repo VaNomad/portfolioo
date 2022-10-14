@@ -518,6 +518,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  /* z-index: 5; */
 }
 
 .card {
@@ -526,8 +527,10 @@ body {
   background-size: cover;
   padding: 10rem 0 0;
   max-width: 45ch;
+  width: 100%;
   background-repeat: no-repeat;
   /* border: 1px solid orange; */
+  z-index: 2;
 }
 
 .card-content {
@@ -557,23 +560,32 @@ body {
 .github-badge {
   font-size: 20px;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .github-button {
   margin-top: 1rem;
   display: flex;
   cursor: pointer;
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  /* text-decoration: none; */
   /* background-color: var(--bckg-light-purple); */
-  padding: 10px 15px;
+  padding: 5px 10px;
   width: fit-content;
   border: 2px solid var(--bckg-light-purple);
   border-radius: 3px;
+  /* z-index: 5; */
+}
+
+.github-button:hover {
+  background-color: var(--bckg-light-purple);
+
 }
 
 .github-button h2 {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 
