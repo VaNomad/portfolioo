@@ -543,6 +543,7 @@ body {
 
 .card {
   color: var(--white);
+  background-color: var(--bckg-black);
   background-image: url("/assets/images/rainydays_screenshot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -553,11 +554,13 @@ body {
   z-index: 2;
   border-radius: 5px;
   overflow: hidden;
+  transition: background-color 2s ease;
 }
 
 .card2 {
   background-image: url("/assets/images/csm_screenshot.jpg");
 }
+
 .card3 {
   background-image: url("/assets/images/analog-flowers_screenshot.jpg");
 }
@@ -565,37 +568,39 @@ body {
 .card-content {
   --padding: 20px;
   padding: var(--padding);
-  background: linear-gradient(
-    hsl(0 0% 0% / 0) ,
-    hsl(0 0% 0% / 1) 50%
-  );
+  background: linear-gradient(hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1));
   /* transform: translateY(60%); */
   /* transition: transform .5s ease; */
+  z-index: 3;
 }
 
 /* .card:hover .card-content { */
-  /* transform: translateY(0); */
-  /* transition-delay: .5s; */
+/* transform: translateY(0); */
+/* transition-delay: .5s; */
 /* } */
 
 .card-title {
   position: relative;
   width: max-content;
   margin-bottom: 1.5rem;
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
 }
 
 .card-title::after {
   content: "";
   position: absolute;
-  height: 4px;
-  left: calc(var(--padding) * -1);
-  width: calc(100% + var(--padding));
-  background: var(--purple-text);
+  height: 30px;
+  left: calc(var(--padding) * -2);
   bottom: 0;
-  /* transform: scaleX(0); */
+  padding-right: 30px;
+  width: calc(100% + var(--padding));
+  border-radius: 3px;
+  background: var(--bckg-black);
   transition: transform 0.3s ease;
   transform-origin: left;
+  z-index: -1;
+
 }
 
 .card:hover .card-title::after {
@@ -655,20 +660,27 @@ body {
 @media (hover) {
   .card-content {
     transform: translateY(60%);
-    transition: transform .5s ease;
+    transition: transform .5s ease-in;
+    background:hsl(0 0% 0% / 0);
   }
+
   .card:hover .card-content {
     transform: translateY(0);
-    transition-delay: .5s;
-  }  
+    transition-delay: 0.5s;
+
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1)
+    );
+  }
+
   .card-title::after {
     transform: scaleX(0);
+    background:hsl(0 0% 0% / 0.5);
   }
 }
 
-@media screen and (max-width: 920px) {
-
-}
+@media screen and (max-width: 920px) {}
 
 @media screen and (max-width: 780px) {
   /* .logo {
@@ -787,14 +799,15 @@ body {
   .phone {
     margin-left: 0;
     /* border: 1px solid red; */
-    
+
   }
+
   .number {
     /* display: flex; */
     justify-content: center;
     /* border: 1px solid yellowgreen; */
   }
-  
+
 
   .email:hover span {
     /* display: block; */
