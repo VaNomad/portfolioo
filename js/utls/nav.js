@@ -3,8 +3,17 @@ document.querySelectorAll(".nav-link").forEach(link => {
   if (link.href === window.location.href) {
     link.setAttribute('aria-current', 'page')
   }
-  
-})
+});
+
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelector(".navlinks");
+
+// forEach(link => {
+//   if (link.href.includes(`${activePage}`)) {
+//     link.classList.add("active");
+//   }
+// });
+
 
 /* —————————  mobile menu  ———————————————————————————————————————— */
 const mobile = document.querySelector(".mobile");
