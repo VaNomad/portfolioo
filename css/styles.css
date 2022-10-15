@@ -158,8 +158,6 @@ body {
 .personal-links {
   position: absolute;
   display: flex;
-  justify-self: space-between;
-  /* flex-direction: row; */
   justify-self: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -227,7 +225,7 @@ body {
   border: none;
   color: var(--bckg-lightest-pink);
   font-size: 50px;
-  left: 15%;
+  left: 100px;
   cursor: pointer;
   z-index: 3;
 }
@@ -598,9 +596,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background-color: var(--bckg-dark-purple);
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
 }
 
@@ -623,7 +621,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10rem 0 0;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   /* border: 1px solid orange; */
   z-index: 2;
@@ -714,13 +712,14 @@ body {
 
 .card-text {
   width: 100%;
-  max-width: 600px;
-  margin-top: 2rem;
+  max-width: 800px;
+  margin-top: 1rem;
   color: var(--white);
   padding: 1rem;
   border: solid 1px var(--white-text);
   border-radius: 5px;
   color: var(--white-text);
+  font-size: 16px;
 }
 
 .card-text h3 {
@@ -754,8 +753,8 @@ body {
     transition-delay: 0.5s;
 
     background: linear-gradient(
-      hsl(0 0% 0% / 0) 35%,
-      hsl(0 0% 0% / 0.8) 50%
+      hsl(0 0% 0% / 0) 20%,
+      hsl(0 0% 0% / 0.8) 60%
     );
   }
 
