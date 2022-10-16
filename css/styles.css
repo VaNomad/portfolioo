@@ -51,6 +51,7 @@
   --black-bg-solid: #000000;
   --black-bg-grad: #171726;
   --green-link: rgb(173, 255, 47);
+  --yellow-link-opaque: rgba(255, 234, 0, 0.2);
 }
 
 li {
@@ -107,14 +108,6 @@ body {
 .nav-link {
   font-size: 20px;
   padding: 50px;
-}
-
-.nav-link a,
-.nav-link span[aria-current='page'] {
-  /* background-color: var(--bckgr-white); */
-  border: solid 1px var(--bckgr-white);
-  color: var(--bckg-light-orange);
-  z-index: 5;
 }
 
 .nav-link a,
@@ -206,6 +199,11 @@ body {
   text-transform: lowercase;
   top: 50vh;
   right: 10%;
+}
+
+a:is(:link, :active, :visited).active {
+  border-bottom: dotted 6px var(--yellow-link-opaque);
+  padding: 5px;
 }
 
 
