@@ -40,7 +40,7 @@ links.forEach((link) => {
 
 
 // ——————————————————————————————————— Home page —————————— 
-//Hero text on-scroll animation
+// Text on-scroll animation
 
 const myname = document.querySelector(".myname");
 const line2 = document.querySelector(".line2");
@@ -58,7 +58,7 @@ window.onscroll = () => {
 }
 
 
-// ——————————————————————————————————— 2nd Slider —————————— 
+// ——————————————————————————————————— Slider —————————— 
 
 const slidesContainer = document.querySelector(".slides-container");
 const slide = document.querySelector(".slide");
