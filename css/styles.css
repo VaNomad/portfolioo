@@ -796,6 +796,20 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  /* Home page .................... */
+
+  /* About page ....................*/
+  .text-bg h1 {
+    right: 60%;
+  }
+
+  .text-bg h2 {
+    left: 20%;
+  }
+  
+  /* Work page .....................*/
+
+  /* Projects page .................*/
   .card-wrapper {
     max-width: 400px;
     margin-bottom: 3rem;
