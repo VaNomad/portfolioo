@@ -88,8 +88,6 @@ body {
   align-content: space-between;
   text-align: center;
   z-index: 2;
-
-  /* border: 1px solid black; */
 }
 
 .nav-display {
@@ -109,7 +107,6 @@ body {
 .nav-link {
   font-size: 20px;
   padding: 50px;
-  /* border: #FC5184 solid 1px; */
 }
 
 .nav-link a[aria-current="page"] {
@@ -146,7 +143,6 @@ body {
   color: var(--green-link);
   transition: all 2s ease;
   right: 50px;
-
 }
 
 .personal-links {
@@ -197,7 +193,7 @@ body {
   display: inline;
   color: var(--bckg-light-yellow);
   text-transform: lowercase;
-  color: greenyellow;
+  color: var(--green-link);
 }
 
 .show-scroll {
@@ -232,7 +228,7 @@ body {
   width: 8px;
   height: 8px;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--white-text);
   mix-blend-mode: exclusion;
   border-radius: 50%;
   border-color: var(--white-logo);
@@ -255,7 +251,7 @@ body {
   width: 55px;
   height: 55px;
   transform: translate(-50%, -50%);
-  border: solid 1px #fff;
+  border: solid 1px var(--white-logo);
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
@@ -273,24 +269,19 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
-
   align-items: center;
-  /* border: solid 2px greenyellow; */
 }
 
 .wrapper {
   width: 100%;
   height: 100vh;
   display: flex;
-
-  /* background-color: #FDA6E9; */
 }
 
 .hero-text {
   height: 100%;
   width: 100%;
   padding: 100px;
-  /* border: solid 1px orange; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,10 +289,8 @@ body {
 
 .hero-title {
   padding-left: 10px;
-  /* font-family: 'Archivo Black', sans-serif; */
   font-size: 90px;
   font-family: 'Bebas Neue', cursive;
-  /* overflow-x: hidden; */
 }
 
 .myname {
@@ -316,7 +305,6 @@ body {
   background-clip: text;
   color: transparent;
   animation: text-animate 4s ease-in-out .01s infinite alternate both;
-  /* animation-delay: 2s; */
   background-size: 400%;
   background-position: -20%;
 }
@@ -351,7 +339,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: "_";
-
 }
 
 .line3 {
@@ -367,7 +354,6 @@ body {
   display: flex;
   justify-content: center;
   letter-spacing: 4px;
-  /* border: solid 1px pink; */
   transform: rotate(90deg);
   right: 10%;
   top: 43%;
@@ -382,12 +368,10 @@ body {
   transform: rotate(-90deg);
   left: 30%;
   top: 223%;
-  /* border: solid 1px pink; */
 }
 
 .arrow img,
 .arrow-two img {
-  /* border: solid 1px pink; */
   width: 70px;
 }
 
@@ -396,7 +380,6 @@ body {
   font-weight: 100;
   font-size: 20px;
   padding-right: 30px;
-  /* border: solid 1px pink; */
 }
 
 .fscreen-text {
@@ -427,7 +410,6 @@ body {
 
 .slides-container {
   height: 100vh;
-  /* scrollbar-width: none; */
   width: 100%;
   display: flex;
   overflow: scroll;
@@ -498,7 +480,9 @@ body {
   transition: 0.3s ease;
 }
 
+
 /* ——————————————————————————————————— ABOUT PAGE —————————— */
+
 .about {
   background: linear-gradient(to right, var(--black-bg-solid) 33%, var(--black-bg-grad));
 }
@@ -524,20 +508,17 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* border: 4px solid lightslategray; */
 }
 
 .bg-image {
   flex-basis: 50%;
-  /* border: 1px solid greenyellow; */
   overflow: hidden;
 }
 
 .text-bg {
   width: 100%;
   flex-basis: 50%;
-  color: var(--white);
-  /* border: 1px solid red; */
+  color: var(--white-logo);
   display: flex;
   align-items: center;
 }
@@ -555,7 +536,6 @@ body {
   background-clip: text;
   color: transparent;
   animation: text-animate 4s ease-in-out .01s infinite alternate both;
-  /* animation-delay: 2s; */
   background-size: 400%;
   background-position: -10%;
   z-index: 2;
@@ -579,7 +559,6 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  /* border: 1px solid orange; */
 }
 
 .text p {
@@ -593,9 +572,8 @@ body {
 }
 
 
-
-
 /* ——————————————————————————  PROJECTS PAGE  ———————————————————— */
+
 .card-wrapper {
   display: flex;
   flex-direction: column;
@@ -616,7 +594,6 @@ body {
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(var(--black-bg-grad), var(--black-bg-solid));
-  /* z-index: 5; */
 }
 
 .card {
@@ -628,7 +605,6 @@ body {
   padding: 10rem 0 0;
   max-width: 700px;
   width: 100%;
-  /* border: 1px solid orange; */
   z-index: 2;
   border-radius: 5px;
   overflow: hidden;
@@ -648,21 +624,13 @@ body {
   padding: var(--padding);
   background: linear-gradient(hsl(0 0% 0% / 0),
       hsl(0 0% 0% / 1));
-  /* transform: translateY(60%); */
-  /* transition: transform .5s ease; */
   z-index: 3;
 }
-
-/* .card:hover .card-content { */
-/* transform: translateY(0); */
-/* transition-delay: .5s; */
-/* } */
 
 .card-title {
   position: relative;
   width: max-content;
   margin-bottom: 1.5rem;
-  /* border: 1px solid yellowgreen; */
 }
 
 .card-title::after {
@@ -688,7 +656,7 @@ body {
   font-size: 21px;
   margin-right: 10px;
   cursor: pointer;
-  color: white;
+  color: var(--white-logo);
 }
 
 .link-button {
@@ -740,7 +708,7 @@ body {
 
 .buttons img {
   width: 21px;
-  color: white;
+  color: var(--white-logo);
   padding: 2px 0 0 0;
 }
 
@@ -750,17 +718,15 @@ body {
   .card-content {
     transform: translateY(60%);
     transition: transform .5s ease-in;
-    background:hsl(0 0% 0% / 0);
+    background: hsl(0 0% 0% / 0);
   }
 
   .card:hover .card-content {
     transform: translateY(0);
     transition-delay: 0.5s;
 
-    background: linear-gradient(
-      hsl(0 0% 0% / 0) 20%,
-      hsl(0 0% 0% / 0.8) 60%
-    );
+    background: linear-gradient(hsl(0 0% 0% / 0) 20%,
+        hsl(0 0% 0% / 0.8) 60%);
   }
 
   .card-title::after {
@@ -780,6 +746,7 @@ body {
     max-width: 500px;
     margin-bottom: 3rem;
   }
+
   .card {
     max-width: 500px;
   }
@@ -800,6 +767,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+
   /* Home page .................... */
   .hero-title {
     font-size: 50px;
@@ -817,24 +785,10 @@ body {
   .line3 {
     top: 53%;
   }
-  /* About page ....................*/
-  /* .text-bg h1 {
-    right: 60%;
-    top: -9%;
-  }
-
-  .text-bg h2 {
-    position: absolute;
-    right: 30%;
-    top: 8%;
-  } */
-
-  /* Work page .....................*/
 
   /* Projects page .................*/
   .card-wrapper {
     max-width: 400px;
-    /* margin-bottom: 3rem; */
   }
 
   .card-text {
@@ -854,23 +808,18 @@ body {
     font-size: 12px;
   }
 
-   .badge {
+  .badge {
     font-size: 17px;
   }
 
   .buttons img {
     width: 17px;
   }
-
-
-  
-  
 }
 
 @media screen and (max-width: 780px) {
-  
 
-  /* nav */
+  /* Nav .......................... */
   .nav-menu {
     display: block;
     display: flex;
@@ -884,9 +833,7 @@ body {
     min-width: 250px;
     top: -100%;
     left: 0;
-    /* flex-direction: column; */
     transition-duration: .5s;
-    /* align-items: center; */
     z-index: 4;
   }
 
@@ -898,14 +845,6 @@ body {
     padding: 2rem;
     z-index: 4;
   }
-
-  /* .no {
-    display: block;
-    position: fixed;
-    margin-top: 28px;
-    margin-left: 30px;
-    z-index: 4;
-  } */
 
   .mobile,
   .mobile2 {
@@ -957,7 +896,6 @@ body {
   .hamburger {
     width: 100%;
     max-width: 35px;
-    /* margin: 10px; */
   }
 
   .call {
@@ -976,24 +914,18 @@ body {
     align-self: center;
     margin-bottom: 5rem;
     justify-content: space-around;
-    /* border: 1px solid orange; */
   }
 
   .phone {
     margin-left: 0;
-    /* border: 1px solid red; */
-
   }
 
   .number {
-    /* display: flex; */
     justify-content: center;
-    /* border: 1px solid yellowgreen; */
   }
 
 
   .email:hover span {
-    /* display: block; */
     color: var(--bckg-light-orange);
   }
 
@@ -1011,30 +943,20 @@ body {
   }
 
   .email:hover {
-    /* display: flex;
-    justify-content: center; */
+    justify-content: center;
     color: var(--bckg-light-orange);
   }
 
   .call:hover .number {
     position: static;
     display: flex;
-    /* top: -150px;
-    left: -1px;
-    width: 100%; */
   }
 
-  /* email:hover::before {
-    position: absolute;
-    bottom: 80px;
-  } */
-
-
   /* Home page .................*/
- 
   .none {
     display: none;
   }
+
   .arrow,
   .arrow-two {
     width: 10%;
@@ -1061,7 +983,6 @@ body {
   }
 
   /* Work page .................*/
-
   .slide-arrow {
     top: 0;
     bottom: 0;
@@ -1074,112 +995,99 @@ body {
     top: 60%;
     border-radius: 50px;
   }
-  
+
   #slide-arrow-next {
     right: 25%;
     top: 60%;
     border-radius: 50px;
   }
-  
+
   /* Project pages .................*/
   .projects {
     height: 120vh;
   }
 
   .card-wrapper {
-   margin-top: 20vh;
+    margin-top: 20vh;
   }
 
   .projects button {
-    /* position: absolute; */
-    /* background: none; */
-    /* border: none; */
-    /* color: var(--bckg-lightest-pink); */
     font-size: 40px;
-    /* left: 100px; */
-    /* cursor: pointer; */
-    /* z-index: 3; */
     left: 45%;
     top: 5%;
   }
-
 }
 
 @media screen and (max-width: 600px) {
-/* Home page .......................*/
-.hero-title {
-  font-size: 35px;
-}
 
-.myname {
-  font-size: 60px;
-  letter-spacing: 3px;
-  top: 25%;
-}
+  /* Home page .......................*/
+  .hero-title {
+    font-size: 35px;
+  }
 
-.line2 {
-  top: 34%;
-}
+  .myname {
+    font-size: 60px;
+    letter-spacing: 3px;
+    top: 25%;
+  }
 
-.line3 {
-  top: 39%;
-}
+  .line2 {
+    top: 34%;
+  }
 
-.show-scroll {
-  top: 60vh;
-  right: 40%;
-  font-size: 22px;
-}
+  .line3 {
+    top: 39%;
+  }
 
-.arrow {
-  top: 47%;
-  width: 5%;
-}
+  .show-scroll {
+    top: 60vh;
+    right: 40%;
+    font-size: 22px;
+  }
 
-.arrow-two {
-  top: 233%;
-}
+  .arrow {
+    top: 47%;
+    width: 5%;
+  }
 
+  .arrow-two {
+    top: 233%;
+  }
 
-/* About page ....................*/
+  /* About page ....................*/
+  .about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -320px;
+    transform: scale(1.28);
+    transform-origin: top;
+  }
 
-.about img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: -320px;
-  transform: scale(1.28);
-  transform-origin: top;
-}
+  .text-bg p {
+    font-size: 14px;
+    left: -60%;
+    padding-right: 40px;
+  }
 
-.text-bg {
-  /* min-width: 60%; */
-}
+  .text-bg h1 {
+    right: 60%;
+    font-size: 80px;
+    top: -3%;
+  }
 
-.text-bg p {
-  font-size: 14px;
-  left: -60%;
-  padding-right: 40px;
+  .text-bg h2 {
+    white-space: nowrap;
+    left: -40%;
+    font-size: 30px;
+    top: 15%;
+  }
 }
-.text-bg h1 {
-  right: 60%;
-  font-size: 80px;
-  top: -3%;
-}
-
-.text-bg h2 {
-  white-space: nowrap;
-  left: -40%;
-  font-size: 30px;
-  top: 15%;
-}
-}
-
 
 @media screen and (max-width: 420px) {
+
   /* Work page ....................*/
   .card {
     padding: 3rem 0 0;
   }
 }
-
