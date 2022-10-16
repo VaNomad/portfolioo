@@ -545,8 +545,9 @@ body {
 .text-bg h1 {
   font-family: 'Bebas Neue', cursive;
   position: absolute;
-  right: 90%;
-  top: 20px;
+  width: 100%;
+  right: 35%;
+  top: -35px;
   color: var(--pink-name-heading);
   font-size: 120px;
   letter-spacing: 6px;
@@ -557,16 +558,18 @@ body {
   /* animation-delay: 2s; */
   background-size: 400%;
   background-position: -10%;
+  z-index: 2;
 }
 
 .text-bg h2 {
+  width: 100%;
   font-size: 40px;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 3px;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: -10%;
-  top: 115px;
+  top: 63px;
 }
 
 .text {
@@ -815,13 +818,16 @@ body {
     top: 53%;
   }
   /* About page ....................*/
-  .text-bg h1 {
+  /* .text-bg h1 {
     right: 60%;
+    top: -9%;
   }
 
   .text-bg h2 {
-    left: 20%;
-  }
+    position: absolute;
+    right: 30%;
+    top: 8%;
+  } */
 
   /* Work page .....................*/
 
@@ -1047,6 +1053,12 @@ body {
     right: 30%;
   }
 
+  /* About page .................*/
+  .text-bg p {
+    position: absolute;
+    left: -20%;
+  }
+
   /* Work page .................*/
 
   .slide-arrow {
@@ -1091,36 +1103,70 @@ body {
 @media screen and (max-width: 600px) {
 /* Home page .......................*/
 .hero-title {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .myname {
-  font-size: 50px;
+  font-size: 60px;
   letter-spacing: 3px;
-  top: 20%;
+  top: 25%;
 }
 
 .line2 {
-  top: 28%;
+  top: 34%;
 }
 
 .line3 {
-  top: 33%;
+  top: 39%;
 }
 
 .show-scroll {
-  top: 50vh;
+  top: 60vh;
   right: 40%;
+  font-size: 22px;
+}
+
+.arrow {
+  top: 47%;
+  width: 5%;
+}
+
+.arrow-two {
+  top: 233%;
 }
 
 
 /* About page ....................*/
+
+.about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -320px;
+  transform: scale(1.28);
+  transform-origin: top;
+}
+
+.text-bg {
+  /* min-width: 60%; */
+}
+
+.text-bg p {
+  font-size: 14px;
+  left: -60%;
+  padding-right: 40px;
+}
 .text-bg h1 {
   right: 60%;
+  font-size: 80px;
+  top: -3%;
 }
 
 .text-bg h2 {
-  left: 20%;
+  white-space: nowrap;
+  left: -40%;
+  font-size: 30px;
+  top: 15%;
 }
 }
 
