@@ -39,7 +39,7 @@ window.addEventListener('scroll', function() {
 // });
 
 
-// ——————————————————————————————————— Hero section —————————— 
+// ——————————————————————————————————— Home page —————————— 
 //Hero text on-scroll animation
 
 const myname = document.querySelector(".myname");
@@ -58,32 +58,6 @@ window.onscroll = () => {
 }
 
 
-// ——————————————————————————————————— Projects section —————————— 
-// mac slides
-// const slides = document.querySelectorAll(".projects");
-
-// window.addEventListener("scroll", macSlides);
-
-// checkBoxes();
-
-// function macSlides() {
-//   const triggerBottom = window.innerHeight;
-
-//   console.log(window.innerHeight);
-
-
-//   slides.forEach(slide => {
-//     const slideTop = slide.getBoundingClientRect().top;
-
-//     if (slideTop < triggerBottom) {
-//       slide.classList.add("show")
-//     } else {
-//       slide.classList.remove("show")
-//     }
-//   });
-
-// }
-
 // ——————————————————————————————————— 2nd Slider —————————— 
 
 const slidesContainer = document.querySelector(".slides-container");
@@ -100,13 +74,5 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
-
-
-// ——————————————————————————————————— image fade-in —————————— 
-
-// const fade = document.querySelectorAll(".fade-in-image");
-
-// console.log(fade);
-
 
 
