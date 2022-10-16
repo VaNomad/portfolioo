@@ -13,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: none;
-  /* cursor: none; */
+  cursor: none;
 }
 
 :root {
@@ -234,7 +234,7 @@ body {
   border-color: var(--white-logo);
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
-  z-index: 1;
+  z-index: 4;
 }
 
 .inner-cursor.grow {
@@ -242,7 +242,7 @@ body {
   height: 30px;
   transition: width 0.5s, height 0.5s;
   mix-blend-mode: difference;
-  z-index: 1;
+  z-index: 4;
 }
 
 .outer-cursor {
@@ -256,7 +256,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   transition: 1s;
-  z-index: 1;
+  z-index: 4;
 }
 
 
@@ -1085,9 +1085,16 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+  /* Navigation ....................*/
+  .inner-cursor,
+  .outer-cursor,
+  .inner-cursor.grow {
+    display: none;
+  }
 
   /* Work page ....................*/
   .card {
     padding: 3rem 0 0;
   }
 }
+

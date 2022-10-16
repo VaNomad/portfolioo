@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
 
 
 
-Cursor
+// Cursor
 let innerCursor = document.querySelector(".inner-cursor");
 let outerCursor = document.querySelector(".outer-cursor");
 
