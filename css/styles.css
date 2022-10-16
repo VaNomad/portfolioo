@@ -331,6 +331,15 @@ body {
   }
 }
 
+.myname:hover {
+  background: linear-gradient(90deg, var(--pink-name-heading) 10%, var(--bckg-light-orange), var(--burgundy), var(--bckg-light-purple), var(--bckg-light-yellow), var(--bckg-light-orange), var(--bckg-light-purple), var(--bckg-light-pink), var(--bckg-lightest-pink), var(--burgundy));
+  background-clip: text;
+  color: transparent;
+  animation: text-animate 4s ease-in-out .01s infinite alternate both;
+  background-size: 400%;
+  background-position: -20%;
+}
+
 .myname .letter {
   display: inline-block;
 }
@@ -350,15 +359,6 @@ body {
   top: 58%;
   left: 50px;
   white-space: nowrap;
-}
-
-.myname:hover {
-  background: linear-gradient(90deg, var(--pink-name-heading) 10%, var(--bckg-light-orange), var(--burgundy), var(--bckg-light-purple), var(--bckg-light-yellow), var(--bckg-light-orange), var(--bckg-light-purple), var(--bckg-light-pink), var(--bckg-lightest-pink), var(--burgundy));
-  background-clip: text;
-  color: transparent;
-  animation: text-animate 4s ease-in-out .01s infinite alternate both;
-  background-size: 400%;
-  background-position: -20%;
 }
 
 .arrow {
@@ -856,13 +856,7 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-  .logo {
-    max-width: 60px;
-  }
-
-  .none {
-    display: none;
-  }
+  
 
   /* nav */
   .nav-menu {
@@ -1019,11 +1013,34 @@ body {
     bottom: 80px;
   } */
 
-  /* Projects page .................*/
-  .projects {
-    /* height: 120vh; */
+
+  /* Home page .................*/
+  .logo {
+    max-width: 60px;
   }
 
+  .none {
+    display: none;
+  }
+  .arrow,
+  .arrow-two {
+    width: 10%;
+  }
+
+  .arrow img,
+  .arrow-two img {
+    width: 50px;
+  }
+
+  .scroll-text {
+    font-size: 14px;
+  }
+
+  .show-scroll {
+    top: 70vh;
+    right: 30%;
+  }
+  /* Projects page .................*/
   .card-wrapper {
     margin-top: 10rem;
   }
@@ -1042,3 +1059,41 @@ body {
   }
 
 }
+
+@media screen and (max-width: 600px) {
+/* Home page .......................*/
+.hero-title {
+  font-size: 30px;
+}
+
+.myname {
+  font-size: 50px;
+  letter-spacing: 3px;
+  top: 20%;
+}
+
+.line2 {
+  top: 28%;
+}
+
+.line3 {
+  top: 33%;
+}
+
+.show-scroll {
+  top: 50vh;
+  right: 40%;
+}
+
+
+/* About page ....................*/
+.text-bg h1 {
+  right: 60%;
+}
+
+.text-bg h2 {
+  left: 20%;
+}
+}
+
+
