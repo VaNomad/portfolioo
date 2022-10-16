@@ -1,45 +1,13 @@
-// ——————————————————————————————————— Navigation ————————————
-
+// ——————————————————————————————————— Home page —————————— 
 // Current Scroll
-const showScroll = document.querySelector(".show-scroll");
 
+const showScroll = document.querySelector(".show-scroll");
 
 window.addEventListener('scroll', function() {
   showScroll.innerHTML = parseInt(window.pageYOffset/18) + '%' + ' ' +  '<span class="fscreen-text">f/scr</span>';
 });
 
 
-
-// Cursor
-let innerCursor = document.querySelector(".inner-cursor");
-let outerCursor = document.querySelector(".outer-cursor");
-
-document.addEventListener('mousemove', moveCursor);
-
-function moveCursor(e) {
-  let x = e.clientX;
-  let y = e.clientY;
-
-  innerCursor.style.left = `${x}px`;
-  innerCursor.style.top = `${y}px`;
-  outerCursor.style.left = `${x}px`;
-  outerCursor.style.top = `${y}px`;
-};
-
-let links = Array.from(document.querySelectorAll("a, button, span, i, .myname, .email"));
-console.log(links);
-
-links.forEach((link) => {
-  link.addEventListener("mouseover", () => {
-    innerCursor.classList.add("grow");
-  });
-  link.addEventListener("mouseleave", () => {
-    innerCursor.classList.remove("grow");
-  });
-});
-
-
-// ——————————————————————————————————— Home page —————————— 
 // Text on-scroll animation
 
 const myname = document.querySelector(".myname");
@@ -58,7 +26,8 @@ window.onscroll = () => {
 }
 
 
-// ——————————————————————————————————— Slider —————————— 
+// ——————————————————————————————————— Work page —————————— 
+// Slider 
 
 const slidesContainer = document.querySelector(".slides-container");
 const slide = document.querySelector(".slide");
