@@ -583,7 +583,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--greyish-text);
-  padding: 0 100px;
+  padding: 80px 100px 0 0;
   margin-top: 130px;
   line-height: 24px;
 }
@@ -600,6 +600,7 @@ body {
   background-color: var(--bckg-dark-purple);
   padding: 15px;
   border-radius: 5px;
+  margin-bottom: 3rem;
 }
 
 .projects {
@@ -734,7 +735,7 @@ body {
 }
 
 .buttons img {
-  width: 22px;
+  width: 21px;
   color: white;
   padding: 2px 0 0 0;
 }
@@ -770,7 +771,65 @@ body {
   }
 }
 
-@media screen and (max-width: 920px) {}
+@media screen and (max-width: 1100px) {
+  .card-wrapper {
+    max-width: 500px;
+    margin-bottom: 3rem;
+  }
+  .card {
+    max-width: 500px;
+  }
+
+  .card,
+  .card2,
+  .card3 {
+    max-height: 250px;
+  }
+
+  .card {
+    padding: 5rem 0 0;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-wrapper {
+    max-width: 400px;
+    margin-bottom: 3rem;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-title::after {
+    height: 30px;
+    bottom: calc(var(--padding)* -.1);
+  }
+
+  .link-button h2 {
+    font-size: 12px;
+  }
+
+   .badge {
+    font-size: 17px;
+  }
+
+  .buttons img {
+    width: 17px;
+  }
+
+
+  
+  
+}
 
 @media screen and (max-width: 780px) {
   /* .logo {
