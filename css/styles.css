@@ -135,12 +135,6 @@ body {
   display: none;
 }
 
-.hamburger {
-  width: 100%;
-  max-width: 50px;
-  margin-top: 10px;
-}
-
 .email:hover span {
   opacity: 0;
 }
@@ -862,11 +856,9 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-  /* .logo {
-    position: relative;
-    margin-top: 18px;
-    margin-left: 30px;
-  } */
+  .logo {
+    max-width: 60px;
+  }
 
   .none {
     display: none;
@@ -889,6 +881,7 @@ body {
     /* flex-direction: column; */
     transition-duration: .5s;
     /* align-items: center; */
+    z-index: 4;
   }
 
   .nav-display {
@@ -912,6 +905,7 @@ body {
   .mobile2 {
     display: block;
     position: fixed;
+    padding: 50px;
     right: 0;
     transition: transform 0.5s;
     transform: rotate(0deg);
@@ -948,6 +942,12 @@ body {
     position: fixed;
     transition: transform 0.5s;
     transform: rotate(-315deg);
+  }
+
+  .hamburger {
+    width: 100%;
+    max-width: 35px;
+    /* margin: 10px; */
   }
 
   .call {
@@ -1018,5 +1018,27 @@ body {
     position: absolute;
     bottom: 80px;
   } */
+
+  /* Projects page .................*/
+  .projects {
+    /* height: 120vh; */
+  }
+
+  .card-wrapper {
+    margin-top: 10rem;
+  }
+
+  .projects button {
+    /* position: absolute; */
+    /* background: none; */
+    /* border: none; */
+    /* color: var(--bckg-lightest-pink); */
+    font-size: 40px;
+    /* left: 100px; */
+    /* cursor: pointer; */
+    /* z-index: 3; */
+    left: 45%;
+    top: 6%;
+  }
 
 }
