@@ -492,6 +492,12 @@ body {
   border-radius: 48px 0 0 48px;
 }
 
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
 /* ——————————————————————————————————— ABOUT PAGE —————————— */
 .about {
   background: linear-gradient(to right, var(--black-bg-solid) 33%, var(--black-bg-grad));
@@ -1040,7 +1046,29 @@ body {
     top: 70vh;
     right: 30%;
   }
-  /* Projects page .................*/
+
+  /* Work page .................*/
+
+  .slide-arrow {
+    top: 0;
+    bottom: 0;
+    height: 80px;
+    width: 80px;
+  }
+
+  #slide-arrow-prev {
+    left: 25%;
+    top: 60%;
+    border-radius: 50px;
+  }
+  
+  #slide-arrow-next {
+    right: 25%;
+    top: 60%;
+    border-radius: 50px;
+  }
+  
+  /* Project pages .................*/
   .card-wrapper {
     margin-top: 10rem;
   }
