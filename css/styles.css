@@ -834,7 +834,7 @@ body {
   /* Projects page .................*/
   .card-wrapper {
     max-width: 400px;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
   }
 
   .card-text {
@@ -880,7 +880,7 @@ body {
     background-color: var(--black-bg-solid);
     /* padding: 4rem; */
     position: fixed;
-    width: 50%;
+    width: 100%;
     min-width: 250px;
     top: -100%;
     left: 0;
@@ -895,7 +895,7 @@ body {
     position: fixed;
     justify-content: center;
     align-items: center;
-    padding: 3.1rem;
+    padding: 2rem;
     z-index: 4;
   }
 
@@ -911,7 +911,7 @@ body {
   .mobile2 {
     display: block;
     position: fixed;
-    padding: 50px;
+    padding: 40px;
     right: 0;
     transition: transform 0.5s;
     transform: rotate(0deg);
@@ -923,7 +923,7 @@ body {
   .nav-link {
     padding: 1rem;
     font-size: 1.4rem;
-    margin: 1rem auto;
+    margin: .5rem auto;
     z-index: 3;
     color: white;
   }
@@ -935,7 +935,7 @@ body {
   .nav-menu.active {
     left: 0;
     top: 0;
-    padding-top: 10rem;
+    padding-top: 8rem;
   }
 
   .mobile.active {
@@ -948,6 +948,10 @@ body {
     position: fixed;
     transition: transform 0.5s;
     transform: rotate(-315deg);
+  }
+
+  .logo {
+    max-width: 60px;
   }
 
   .hamburger {
@@ -996,8 +1000,8 @@ body {
   .email:hover::before {
     position: static;
     color: var(--bckg-light-orange);
-    left: 1rem;
-    right: 1rem;
+    left: 2rem;
+    right: 2rem;
     font-size: 20px;
     letter-spacing: 2px;
   }
@@ -1007,8 +1011,8 @@ body {
   }
 
   .email:hover {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     color: var(--bckg-light-orange);
   }
 
@@ -1027,10 +1031,7 @@ body {
 
 
   /* Home page .................*/
-  .logo {
-    max-width: 60px;
-  }
-
+ 
   .none {
     display: none;
   }
@@ -1081,8 +1082,12 @@ body {
   }
   
   /* Project pages .................*/
+  .projects {
+    height: 120vh;
+  }
+
   .card-wrapper {
-    margin-top: 10rem;
+   margin-top: 20vh;
   }
 
   .projects button {
@@ -1095,7 +1100,7 @@ body {
     /* cursor: pointer; */
     /* z-index: 3; */
     left: 45%;
-    top: 6%;
+    top: 5%;
   }
 
 }
@@ -1170,4 +1175,11 @@ body {
 }
 }
 
+
+@media screen and (max-width: 420px) {
+  /* Work page ....................*/
+  .card {
+    padding: 3rem 0 0;
+  }
+}
 
